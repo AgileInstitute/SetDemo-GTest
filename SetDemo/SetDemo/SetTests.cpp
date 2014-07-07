@@ -2,6 +2,12 @@
 //
 
 #include "gtest/gtest.h"
+#include <set.h>
+
+TEST(SuperSet, InitialSizeIsZero) {
+	Set set;
+	EXPECT_EQ(0, set.size());
+}
 
 TEST(CalculatorTest, Addition) {
 	EXPECT_EQ(4, 2 + 2);

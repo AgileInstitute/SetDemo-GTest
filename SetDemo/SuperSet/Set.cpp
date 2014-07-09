@@ -1,8 +1,16 @@
 #include "Set.h"
 
+using namespace std;
+
+void Set::add(string element)
+{
+	elements.push_back(element);
+}
+
+
 int Set::size()
 {
-	return -1;
+	return elements.size();
 }
 
 Set::Set(void)

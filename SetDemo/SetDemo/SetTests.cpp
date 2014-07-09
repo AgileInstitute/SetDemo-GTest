@@ -4,6 +4,12 @@
 #include "gtest/gtest.h"
 #include <set.h>
 
+TEST(SuperSet, AddingItemIncreasesSize) {
+	Set set;
+	set.add("this string");
+	EXPECT_EQ(1, set.size());
+}
+
 TEST(SuperSet, InitialSizeIsZero) {
 	Set set;
 	EXPECT_EQ(0, set.size());
